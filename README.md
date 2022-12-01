@@ -16,7 +16,7 @@ This is my calculator project for SEV9
  
 
 # Wireframes
-![Wireframe](../Calculator%20WreFrame.png)
+![Wire Frame](../WireFrame.png)
 
 # License
 Copyright (c) 2022 Shawn Michael Bailey
