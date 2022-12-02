@@ -13,7 +13,7 @@ This is my calculator project for SEV9
     - Clear
 
  # PMVP
-    -Neomorphism 
+    -Neumorphism 
 
 # Wireframes
 ![my wire frame](WireFrame.png)
