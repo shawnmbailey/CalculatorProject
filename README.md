@@ -1,19 +1,19 @@
 # Calculator Project
 This is my calculator project for SEV9
 
-#MVP
+# MVP
 *Minimum Viable Product*
 
 - Calculator Interface 
--Fucntionality
+-Functionality
     - Add
     - Subtract
     - Multiply
     - Divide
     - Clear
 
- #PMVP
- 
+ # PMVP
+    -Neomorphism 
 
 # Wireframes
 ![my wire frame](WireFrame.png)
