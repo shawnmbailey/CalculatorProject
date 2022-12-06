@@ -14,6 +14,7 @@ This is my calculator project for SEV9
 
  # PMVP
     -Neumorphism 
+    - Light/Dark Theme
 
 # Wireframes
 ![my wire frame](WireFrame.png)
