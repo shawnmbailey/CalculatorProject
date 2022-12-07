@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: linear-gradient( to  right, silver,black);
+    background-image: linear-gradient( to  left, silver,black);
 }
 
 body{
@@ -34,7 +34,6 @@ body{
     right: 30px;
     color: whitesmoke;
     cursor: pointer;
-    z-index:  1;
 }
 
 .theme-toggler.active {
@@ -47,8 +46,8 @@ body{
 
 .theme-toggler::before {
     content: '';
-    height: 30px;
-    width: 30px;
+    height: 15px;
+    width: 15px;
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -60,19 +59,18 @@ body{
     margin: 0 10px;
     height: 150px;
     width: 320px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+    display: grid;
+    justify-content: flex-start;
     font-size: 30px;
     margin-bottom: 20px;
-    box-shadow: inset -1px -1px 5px #ffffff70,
+    box-shadow: inset -1px -1px 7px #ffffff70,
     inset 1px 1px 15px #00000070;
     
   }
 
 button {
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     border: 0;
     border-radius: 50px;
     margin: 5px;
@@ -102,8 +100,10 @@ transform:scale(0.8);
 } 
 
 .calculator button#delete {
-    background-color: coral;
-    color: yellow;
+   height: 40px;
+   width: 60px;
+   background-color: coral;
+   color: yellow;
 }
 
 .calculator button.numbers {
@@ -132,6 +132,8 @@ transform:scale(0.8);
   }
 
   .calculator.dark button#delete {
+    height: 40px;
+    width: 60px;
     background-color: darkslategray;
     color: black;
   }
