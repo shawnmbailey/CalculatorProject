@@ -1,19 +1,22 @@
- *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    outline: 0;
+*{
+  margin: 0;
+  padding: 0;
 }
 
 body {
     background-image: linear-gradient( to  right, silver,black);
 }
 
+body{
+  font-family: fantasy;
+}
+
 .container {
-    height: 100vh;
-    width: 100vw;
     display: grid;
     place-items: center;
+    width: 100vh;
+    height: 100vh;
+    margin: auto;
 }
 
 .calculator {
@@ -21,25 +24,25 @@ body {
     height: auto;
     width: auto;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 30px #000;
+    border-radius: 30px;
+    box-shadow: 0 0 50px black;
 }
 
 .theme-toggler {
     position: absolute;
     top: 30px;
     right: 30px;
-    color: #fff;
+    color: whitesmoke;
     cursor: pointer;
     z-index:  1;
 }
 
 .theme-toggler.active {
-    color: #333;
+    color: slategray;
 }
 
 .theme-toggler.active::before {
-    background-color: #fff;
+    background-color: whitesmoke;
 }
 
 .theme-toggler::before {
@@ -50,8 +53,7 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
     border-radius: 100%;
-    background-color: #333;
-    z-index: -1;
+    background-color:slategray;
 }
 
 #view {
@@ -78,49 +80,45 @@ button {
     font-family: fantasy;
     cursor: pointer;
     box-shadow: inset -1px -1px 5px #ffffff70,
-    inset 1px 1px 15px #00000070
+    inset 1px 1px 15px #00000070 
 }
 
 button:hover {
-    transform: scale(1.1);
+transform:scale(0.8);
 }
 
 #equal {
-    height: 60px;
+    height: 80px;
 }
 
-
+/* settings for light mode */
 
 .calculator {
-    background-color: rgb(211, 255, 35);
+    background-color: blanchedalmond;
 }
 
 .calculator #view {
-    color: #0a1e23;
+    color: slateblue;
 } 
 
-#input {
-    background-color: #0c0016;
-}
-
 .calculator button#delete {
-    background-color: #ffd5d8;
-    color: #fc4552;
+    background-color: coral;
+    color: yellow;
 }
 
 .calculator button.numbers {
-    background-color: #c3eaff;
-    color: #000000;
+    background-color: palevioletred;
+    color: black;
 }
 
 .calculator button.math-function {
-    background-color: #ffd0fb;
-    color: #f967f3;
+    background-color: pink;
+    color: orangered;
   }
   
   .calculator button.compute {
-    background-color: #adf9e7;
-    color: #000;
+    background-color: palegreen;
+    color: red;
   }
 
   
@@ -130,30 +128,30 @@ button:hover {
   }
 
   .calculator.dark #view {
-    color: #f8fafb;
+    color: whitesmoke;
   }
 
   .calculator.dark button#delete {
-    background-color: rgba(64, 0, 64, 0.361);
-    color: slategrey;
+    background-color: darkslategray;
+    color: black;
   }
 
   .calculator.dark button.numbers {
-    background-color: rgba(25, 25, 112, 0.492);
+    background-color: indigo;
     color: whitesmoke;
   }
 
   .calculator.dark button.math-function {
-    background-color: rgba(29, 13, 13, 0.703);
+    background-color: midnightblue;
     color: whitesmoke;
   }
   
   .calculator.dark button.compute {
-    background-color: rgba(31, 52, 52, 0.697);
-    color: red;
+    background-color: darkblue;
+    color: orangered;
   }
   .calculator.dark button.decimal {
     background-color: black;
-    color: slateblue;
+    color: peru;
   }
   
