@@ -34,6 +34,7 @@ body{
     right: 30px;
     color: whitesmoke;
     cursor: pointer;
+    z-index: 1;
 }
 
 .theme-toggler.active {
@@ -69,8 +70,8 @@ body{
   }
 
 button {
-    height: 50px;
-    width: 50px;
+    height: px;
+    width: 70px;
     border: 0;
     border-radius: 50px;
     margin: 5px;
@@ -78,7 +79,7 @@ button {
     font-family: fantasy;
     cursor: pointer;
     box-shadow: inset -1px -1px 5px slategray,
-    inset 1px 1px 15px #00000070;
+    inset 1px 1px 15px black;
 }
 
 button:hover {
@@ -86,7 +87,7 @@ transform:scale(0.8);
 }
 
 #equal {
-    height: 80px;
+    height: 40px;
 }
 
 /* settings for light mode */

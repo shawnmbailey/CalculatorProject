@@ -14,13 +14,15 @@ This is my calculator project for SEV9
 
  # PMVP
  *Post Minimum Viable Product*
-    -Neumorphism 
+    - Neumorphism 
     - Light/Dark Theme
 
 # Wireframes
 ![my wire frame](WireFrame.png)
 
 # License
+
+Copyright (c) 2022 Shawn Michael Bailey
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
