@@ -62,6 +62,7 @@ body{
     width: 320px;
     display: grid;
     text-align:right;
+    line-height: 150px;
     font-size: 30px;
     margin-bottom: 20px;
     box-shadow: inset -1px -1px 7px #ffffff70,
