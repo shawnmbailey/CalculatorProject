@@ -17,7 +17,7 @@ function handleOperator(op) {
     operatorChosen = true;
   }
 }
-
+// math function being evaluated based on operator being selected
 function handleEvaluation() {
   operatorChosen = false;
   num2 = display.innerText;
@@ -35,7 +35,7 @@ function handleEvaluation() {
     return parseFloat(num1) - num2;
   }
 }
-
+// making clear button functional and displaying sum based on math operation performed 
 for (let button of buttons) {
   button.addEventListener("click", (e) => {
     console.log(e.target.classList[0] == "number");
@@ -66,7 +66,7 @@ for (let button of buttons) {
     }
   });
 }
-
+// functionality of the light and dark mode 
 const toggleOn = document.querySelector(".theme-toggler");
 const darkModeCalc = document.querySelector(".dark");
 const icon = document.querySelector(".toggler-icon");
