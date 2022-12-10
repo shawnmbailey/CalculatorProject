@@ -40,7 +40,15 @@ for(let button of buttons){
       console.log(e.target.classList[0] == 'number')
       let num = e.target.dataset.number
       let op = e.target.dataset.operator
-
+      if(op ==='RESET'){
+         console.log('RESET')
+         display.innerText=''
+         num1 = 0;
+         num2 = 0;
+         operatorChosen = false;
+         operator = ''
+         return
+      }
       if(op ==='='){
          display.innerText= handleEvaluation()
          return;
