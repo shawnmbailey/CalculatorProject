@@ -5,46 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
     <title>Calculator</title>
 </head>
 <body>
     <div class="container">
         <div class="calculator dark">
             <div class="buttons"></div>
-                <button class="delete" id="delete">Reset</button>
+                <button data-operator="RESET" class="delete" id="delete">Reset</button>
             <div class="theme-toggler active">
                 <i class="toggle"></i>
             </div>
             <div class="display-screen">
-                <div id="view">
-                    <input type="text" class="input" id="input" value="" placeholder="answer" readonly />
-                </div>
+                <div id="view"></div>
             </div>
             <div class="buttons">
                 <div class="row1">
-                    <button class="numbers" id="7">7</button>
-                    <button class="numbers" id="8">8</button>
-                    <button class="numbers" id="9">9</button>
-                    <button class="math-function" id="multiply">×</button>
-                    <button class="math-function" id="divide">÷</button>
+                    <button data-operator="*" class="math-function" id="multiply">×</button>
+                    <button data-operator="/" class="math-function" id="divide">÷</button>
+                    <button data-operator="–" class="math-function" id="subtract">–</button>
+                    <button data-operator="+" class="math-function" id="add">+</button>
                 </div>
                 <div class="row2">
-                    <button class="numbers" id="4">4</button>
-                    <button class="numbers" id="5">5</button>
-                    <button class="numbers" id="6">6</button>
-                    <button class="math-function" id="subtract">–</button>
-                    <button class="math-function" id="add">+</button>
+                    <button data-number="7" class="numbers" id="7">7</button>
+                    <button data-number="8" class="numbers" id="8">8</button>
+                    <button data-number="9" class="numbers" id="9">9</button>
+                </div>
+                <div class="row3">
+                    <button data-number="4" class="numbers" id="4">4</button>
+                    <button data-number="5" class="numbers" id="5">5</button>
+                    <button data-number="6" class="numbers" id="6">6</button>
+
+                <div class="row4">
+                <button data-number="1" class="numbers" id="1">1</button>
+                <button data-number="2" class="numbers" id="2">2</button>
+                <button data-number="3" class="numbers" id="3">3</button>
             </div>
-            <div class="row3">
-                <button class="numbers" id="1">1</button></td>
-                <button class="numbers" id="2">2</button></td>
-                <button class="numbers" id="3">3</button></td>
-                <button class="decimal" id="decimal">·</button>
-                <button class="compute" id="equal">=</button>
+                <div class="row3">
+                <button data-number="0" class="numbers" id="0">0</button>
+                <button data-operator="·" class="decimal" id="decimal">·</button>
+                <button data-operator="=" class ="compute" id="equal">=</button>
             </div>
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
-</body>
-</html>
+    </body>
+    </html>
